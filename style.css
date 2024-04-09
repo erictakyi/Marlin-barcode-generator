@@ -1,0 +1,110 @@
+.container {
+    max-width: 100%;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 1200px; /* Adjusted to accommodate 4 images */
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+.horizontal-image {
+    position: absolute;
+    width: 300px; /* Set image width */
+    height: 300px; /* Set image height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.horizontal-image:nth-child(1) {
+    animation: slideImage1 12s infinite linear;
+}
+
+.horizontal-image:nth-child(2) {
+    animation: slideImage2 12s infinite linear;
+}
+
+.horizontal-image:nth-child(3) {
+    animation: slideImage3 12s infinite linear;
+}
+
+.horizontal-image:nth-child(4) {
+    animation: slideImage4 12s infinite linear;
+}
+
+@keyframes slideImage1 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideImage2 {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(75%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    75% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideImage3 {
+    0% {
+        transform: translateX(200%);
+    }
+    25% {
+        transform: translateX(175%);
+    }
+    50% {
+        transform: translateX(150%);
+    }
+    75% {
+        transform: translateX(125%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideImage4 {
+    0% {
+        transform: translateX(300%);
+    }
+    25% {
+        transform: translateX(275%);
+    }
+    50% {
+        transform: translateX(250%);
+    }
+    75% {
+        transform: translateX(225%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
