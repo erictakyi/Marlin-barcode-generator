@@ -3,8 +3,10 @@
   
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
+  <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Barcode Generator</title>
+    <title>Barcode Generator </title>
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="Description" content="Barcode Generator online in real-time. Supporting multiple barcodes including CODE128, EAN, UPC, CODE39, ITF, MSI and pharmacode">
@@ -38,7 +40,7 @@
 	<style>
 	.rangeslider,
 .rangeslider__fill {
-  background: #e6e6e6;
+  background: #FF8000;
   display: block;
   height: 10px;
   width: 100%;
@@ -63,14 +65,14 @@
 }
 
 .rangeslider__fill {
-  background: #3BB2D6;
+  background: #FF8000;
   position: absolute;
   top: 0;
 }
 
 .rangeslider__handle {
   background: white;
-  border: 1px solid #ccc;
+  border: 1px solid #FF8000;
   cursor: pointer;
   display: inline-block;
   width: 20px;
@@ -213,17 +215,17 @@ html{
 
 #title a:hover {
     text-decoration: underline;
-    color: #000;
+    color: #FF8000;
 }
 
 #title a:active {
     text-decoration: underline;
-    color: #000;
+    color: ##FF8000;
 }
 
 #invalid{
     display: none;
-    color:#DE0000;
+    color:#FF8000;
     margin-top:10px;
     font-size:14pt;
     vertical-align: middle;
@@ -284,7 +286,7 @@ html{
 }
 
 .barcode-select{
-  border-color: #ccc;
+  border-color: #FF8000;
 }
 
 	</style>
@@ -396,7 +398,7 @@ var newBarcode = function() {
         {
           "format": $("#barcodeType").val(),
           "background": $("#background-color").val(),
-          "lineColor": $("#line-color").val(),
+          "lineColor": $("#FF8000").val(),
           "fontSize": parseInt($("#bar-fontSize").val()),
           "height": parseInt($("#bar-height").val()),
           "width": $("#bar-width").val(),
@@ -436,16 +438,25 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
     
     <div id="main">
       <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
             <div id="title">
-              <h1>Barcode Generator</h1>
-			  Visit: <a href="https://linkedin.com/in/eric-takyi-314176235"><b>ENAT73 Coding</b></a>
-
+                <h1>Marlin Barcode Generator--</h1>
+                <h2>Contact Us For Mass Production of Goods</h2>
+                Visit: <a href="https://linkedin.com/in/eric-takyi-314176235"><b>ENAT73 Coding</b></a>
+                <p></p>
+                <div class="image-container">
+                    <img src="./1.png" alt="" class="horizontal-image">
+                    <img src="./2.png" alt="" class="horizontal-image">
+                    <img src="./3.png" alt="" class="horizontal-image">
+                    <img src="./4.png" alt="" class="horizontal-image">
+                    
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
       <div class="barcode-container">
         <svg id="barcode"></svg>
         <span id="invalid">Not valid data for this barcode type!</span>
@@ -573,7 +584,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
           </div>
         </div>
       </div>
-      <button id="saveButton" style="background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer;">Save Barcode</button>
+      <button id="saveButton" style="background-color: brown; color: white; padding: 10px 20px; border: none; cursor: pointer;">Save Barcode</button>
     
     <script>
         // Add JavaScript code here
